@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#05030c">
+  <meta name="color-scheme" content="dark">
+  <meta name="referrer" content="no-referrer">
+  <title>MY GMAIL ACCOUNT</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient" aria-hidden="true">
+    <div class="glow glow-violet"></div>
+    <div class="glow glow-cyan"></div>
+    <div class="glow glow-deep"></div>
+    <div class="particles" id="particles"></div>
+  </div>
+
+  <main class="stage">
+    <header class="intro">
+      <h1 class="title">MY GMAIL ACCOUNT</h1>
+      <p class="lead">It has been this long since I created my new Gmail account.</p>
+    </header>
+
+    <section class="clock-card" aria-labelledby="clock-heading">
+      <h2 class="clock-heading" id="clock-heading">ACCOUNT AGE</h2>
+
+      <div class="clock" id="clock" role="timer" aria-live="off" aria-atomic="true">
+        <div class="unit unit-days">
+          <div class="digits" id="days" data-unit="days" aria-hidden="true"></div>
+          <span class="unit-label">DAYS</span>
+        </div>
+        <span class="sep" aria-hidden="true">:</span>
+        <div class="unit">
+          <div class="digits" id="hours" data-unit="hours" aria-hidden="true"></div>
+          <span class="unit-label">HOURS</span>
+        </div>
+        <span class="sep" aria-hidden="true">:</span>
+        <div class="unit">
+          <div class="digits" id="minutes" data-unit="minutes" aria-hidden="true"></div>
+          <span class="unit-label">MINUTES</span>
+        </div>
+        <span class="sep" aria-hidden="true">:</span>
+        <div class="unit">
+          <div class="digits" id="seconds" data-unit="seconds" aria-hidden="true"></div>
+          <span class="unit-label">SECONDS</span>
+        </div>
+      </div>
+
+      <p class="sr-only" id="clock-sr"></p>
+
+      <p class="support">Every second counts. Every moment becomes part of my digital history.</p>
+      <p class="origin">Counting from <time datetime="2026-11-06T09:25:00+06:00">November 6, 2026, 9:25:00 AM</time> Bangladesh Standard Time (UTC+06:00)</p>
+    </section>
+
+    <section class="privacy" aria-label="Privacy">
+      <svg class="privacy-icon" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+        <path d="M12 3 4.5 6v5.5c0 4.6 3.1 8.1 7.5 9.5 4.4-1.4 7.5-4.9 7.5-9.5V6L12 3Z"/>
+        <rect x="9" y="10.5" width="6" height="5" rx="1.2"/>
+        <path d="M10.2 10.5V9a1.8 1.8 0 0 1 3.6 0v1.5"/>
+      </svg>
+      <p class="privacy-text">I will use this Gmail account to store my private and personal content in Google Drive and Google Photos.</p>
+    </section>
+
+    <div class="action">
+      <button type="button" class="copy-btn" id="copy-btn" aria-label="Copy secret to clipboard">
+        <svg class="copy-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+          <rect x="9" y="9" width="11" height="11" rx="2.5"/>
+          <path d="M5.5 15H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v.5"/>
+        </svg>
+        <span class="copy-label">COPY SECRET</span>
+      </button>
+      <p class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></p>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
